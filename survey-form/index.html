@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="author" content="toh995">
+    <meta name="description" content="Survey Form for the Responseive Web Design certificate from Free Code Camp">
+    <!-- Script from Free Code Camp to verify tests are passing-->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header-section">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+
+    <!-- Form section -->
+    <section>
+        <form id="survey-form">
+
+            <!-- Name -->
+            <div class="form-item">
+                <label id="name-label" form="survey-form" for="name">Name</label>
+                <input form="survey-form" type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+
+            <!-- Email -->
+            <div class="form-item">
+                <label id="email-label" form="survey-form" for="email">Email</label>
+                <input form="survey-form" type="email" id="email" name="email" required placeholder="Enter your Email">
+            </div>
+
+            <!-- Age -->
+            <div class="form-item">
+                <label id="number-label" form="survey-form" for="number">Age (optional)</label>
+                <input form="survey-form" type="number" id="number" name="age" min="1" max="200" placeholder="Age">
+            </div>
+
+            <!-- Role (dropdown menu) -->
+            <div class="form-item">
+                <label id="dropdown-label" form="survey-form" for="dropdown">Which option best describes your current
+                    role?</label>
+                <select form="survey-form" name="role" id="dropdown">
+                    <option disabled selected>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Recommendation (radio buttons) -->
+            <div class="form-item">
+                Would you recommend freeCodeCamp to a friend?
+                <div class="radio-option">
+                    <input form="survey-form" type="radio" id="recommendation-option1" name="recommendation" value="definitely">
+                    <label form="survey-form" for="recommendation-option1">Definitely</label>
+                </div>
+                <div class="radio-option">
+                    <input form="survey-form" type="radio" id="recommendation-option2" name="recommendation" value="maybe">
+                    <label form="survey-form" for="recommendation-option2">Maybe</label>
+                </div>
+                <div class="radio-option">
+                    <input form="survey-form" type="radio" id="recommendation-option3" name="recommendation" value="not-sure">
+                    <label form="survey-form" for="recommendation-option3">Not sure</label>
+                </div>
+            </div>
+
+            <!-- Improvements (checkboxes) -->
+            <div class="form-item">
+                What would you like to see improved? (Check all that apply)
+                <div class="checkbox-option">
+                    <input form="survey-form" type="checkbox" id="improvement-option1" name="front-end-projects" value="front-end-projects">
+                    <label form="survey-form" for="improvement-option1">Front-end Projects</label>
+                </div>
+                <div class="checkbox-option">
+                    <input form="survey-form" type="checkbox" id="improvement-option2" name="back-end-projects" value="back-end-projects">
+                    <label form="survey-form" for="improvement-option2">Back-end Projects</label>
+                </div>
+                <div class="checkbox-option">
+                    <input form="survey-form" type="checkbox" id="improvement-option3" name="data-visualization" value="data-visualization">
+                    <label form="survey-form" for="improvement-option3">Data Visualization</label>
+                </div>
+                <div class="checkbox-option">
+                    <input form="survey-form" type="checkbox" id="improvement-option4" name="challenges" value="challenges">
+                    <label form="survey-form" for="improvement-option4">Challenges</label>
+                </div>
+            </div>
+
+            <!-- Additional comments -->
+            <div class="form-item">
+                <label form="survey-form" for="additional-comments">Any comments or suggestions?</label>
+                <textarea form="survey-form" id="additional-comments" name="additional-comments"></textarea>
+            </div>
+
+            <!-- Submit button -->
+            <div class="form-item">
+                <input form="survey-form" type="submit" id="submit" placeholder="Enter your comment here...">
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>

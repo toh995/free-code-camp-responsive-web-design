@@ -1,4 +1,5 @@
 # CHANGELOG
 
 #### 2020-04-11
-- Added `tribute-page`
+- Added the folder `tribute-page`
+- Added the folder `survey-form`

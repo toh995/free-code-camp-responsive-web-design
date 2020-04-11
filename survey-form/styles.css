@@ -1,0 +1,17 @@
+#header-section {
+    margin-bottom: 3em;
+}
+
+#survey-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+}
+
+
+.form-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: .25em;
+    justify-self: start;
+}

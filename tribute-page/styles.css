@@ -1,0 +1,38 @@
+#main {
+    background-color: #FFCFBF;
+}
+
+#title {
+    color: #749FB3;
+    text-align: center;
+}
+
+#img-div {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#image {
+    /* Make the image size responsively */
+    max-width: 100%;
+    height: auto;
+
+    /* Center the image */
+    display: block;
+    margin: 0 auto;
+}
+
+#tribute-info {
+    /* Center the content */
+    display: block;
+    margin: 0 auto;
+
+    /* Add margins */
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.tribute-info-heading {
+    text-align: center;
+}

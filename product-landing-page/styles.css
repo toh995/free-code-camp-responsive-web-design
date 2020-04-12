@@ -1,0 +1,123 @@
+/* General styles */
+#form-secion,
+#features,
+#how-it-works,
+#pricing {
+    padding-top: 6rem;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.button {
+    font-size: large;
+}
+
+/* Header */
+#header {
+    /* Sticky positioning */
+    position: sticky;
+    top: 0;
+
+    /* Add grid */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    /* More formatting */
+    background-color: lightgray;
+    padding: 1.5rem;
+    height: 3rem;
+}
+
+.header-grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;;
+}
+
+#header-img {
+    max-width: 300px;
+    max-height: 3rem;
+    min-width: 200px;
+    width: 100%;
+    height: auto;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 900px) {
+    #nav-bar {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+/* Form Section */
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#email {
+    width: 100%;
+    max-width: 175px;
+    margin-bottom: 1rem;
+}
+
+/* Features section */
+#features {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.features-grid-item {
+    width: 55vw;
+}
+
+/* How it Works section */
+#video {
+    display: block;
+    margin: 0 auto;
+    width: 70vw;
+    max-width: 560px;
+    height: calc(70vw * 315 / 560);
+    max-height: 315px;
+}
+
+/* Pricing section */
+#pricing-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pricing-flex-item {
+    border: black solid 1px;
+    text-align: center;
+    margin: 1vw;
+}
+
+.pricing-flex-item__header {
+   background-color: lightgray;
+   margin-top: 0;
+   padding: .5rem;
+}
+
+.pricing-flex-item__info-list {
+    padding: 0;
+}
+
+.pricing-flex-item__info-list li {
+    list-style-type: none;
+}
+
+.pricing-flex-item__button {
+    margin-bottom: 1rem;
+}

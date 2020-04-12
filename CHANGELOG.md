@@ -1,6 +1,7 @@
 # CHANGELOG
 
 #### 2020-04-12
+- Added the folder `personal-portfolio`
 - Added the folder `technical-documentation`
 - Added the folder `product-landing-page`
 

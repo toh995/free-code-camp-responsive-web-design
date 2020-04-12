@@ -1,0 +1,55 @@
+/* Include media query */
+/* General styles */
+.javascript-code {
+    background-color: lightgray;
+}
+
+/* Navbar positioning  */
+#navbar {
+    border: 1px solid black;
+}
+
+#navbar-header {
+    text-align: center;
+}
+
+@media screen and (min-width: 726px) {
+    #navbar {
+        position: fixed;
+        width: 250px;
+        left: 5px;
+        top: 5px;
+    }
+
+    #article {
+        margin-left: 280px;
+    }
+
+    #nav-link-holder {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nav-link {
+        margin: 1em;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    #navbar {
+        position: sticky;
+        top: 0;
+        text-align: center;
+        background-color: white;
+        justify-content: center;
+    }
+
+    #nav-link-holder {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nav-link {
+        margin: .25em;
+    }
+}

@@ -1,0 +1,72 @@
+/* General formatting */
+html {
+    scroll-behavior: smooth;
+}
+#body {
+    margin: 0;
+}
+
+/* Format navbar */
+#navbar {
+    background-color: #F566FF;
+    line-height: 1rem;
+
+    /* Fix to the top of the page */
+    position: sticky;
+    top: 0;
+
+    /* Set up flexbox */
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 550px) {
+    #navbar {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 551px) {
+    #navbar {
+        justify-content: flex-end;
+    }
+}
+
+.nav-link {
+    margin: 2rem;
+}
+
+/* Format sections */
+.section {
+    height: calc(100vh - 5rem);
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-content {
+    font-size: xx-large;
+    text-align: center;
+}
+
+/* Welcom section */
+#welcome-section {
+    background-color: #FFFA80;
+}
+
+/* Projects section */
+#projects {
+    background-color: #4DFF73;
+}
+
+.project-tile {
+    display: block;
+    margin: 1em;
+}
+
+/* Contact section */
+#contact {
+    background-color: #9A59FF;
+}
